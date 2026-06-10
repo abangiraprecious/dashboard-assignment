@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0ecf5;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 30px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.nav-links {
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: #555;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+.nav-link:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.nav-link.active {
+    color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.logout-link {
+    color: #ef4444;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 12px;
+}
+
+.logout-link:hover {
+    color: #dc2626;
+}
+
+
+/* ===========================
+   MAIN AREA
+   =========================== */
+.main {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* ===========================
+   TABLE
+   =========================== */
+.table thead th {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    border-bottom: 1px solid #eee;
+}
+
+.table tbody td {
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+}
+
+.car-plate {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.car-owner {
+    font-size: 11px;
+    color: #999;
+    margin-top: 2px;
+}
+
+
+/* ===========================
+   STATUS BADGES
+   =========================== */
+.status {
+    font-size: 13px;
+}
+
+.status::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status.completed::before {
+    background-color: #22c55e;
+}
+
+.status.in-progress::before {
+    background-color: #f97316;
+}
+
+.status.pending::before {
+    background-color: #eab308;
+}
