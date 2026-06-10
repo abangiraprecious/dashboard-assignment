@@ -23,8 +23,6 @@ The dashboard displays service records for cars that come in for engine oil chan
 1. Clone the repository: `git clone https://github.com/abangiraprecious/dashboard-assignment.git`
 2. Open `index.html` in your browser.
 
-That's it. No installations needed.
-
 ## Project Structure
 
 ```
