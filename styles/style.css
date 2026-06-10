@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #d0ecf5;
+    background-color: #e1e1e1;
     min-height: 100vh;
 }
 
@@ -23,10 +23,12 @@ body {
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 40px;
+    color: rgb(7, 29, 129);
+
 }
 
 .nav-links {
@@ -34,11 +36,12 @@ body {
 }
 
 .nav-link {
-    color: #555;
+    color: #373636;
     font-size: 14px;
     padding: 10px 12px;
     border-radius: 6px;
     margin-bottom: 4px;
+    font-weight: 600;
 }
 
 .nav-link:hover {
@@ -47,7 +50,7 @@ body {
 }
 
 .nav-link.active {
-    color: #3b82f6;
+    color: rgb(7, 29, 129);
     background-color: #eff6ff;
 }
 
@@ -62,10 +65,18 @@ body {
     color: #dc2626;
 }
 
+.btn {
+    background-color: rgb(7, 29, 129);
+    color: #fff;
+    font-weight: 600;
+}
 
-/* ===========================
-   MAIN AREA
-   =========================== */
+.btn:hover {
+    background-color: #aecdf6;
+    color: rgb(7, 29, 129);
+    font-weight: 600;
+}
+
 .main {
     margin-left: 220px;
     padding: 30px;
@@ -74,7 +85,7 @@ body {
 .avatar {
     width: 36px;
     height: 36px;
-    background-color: #333;
+    background-color: rgb(7, 29, 129);
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -85,25 +96,23 @@ body {
 }
 
 
-/* ===========================
-   TABLE
-   =========================== */
 .table thead th {
     font-size: 12px;
-    color: #999;
+    color: #000000;
     font-weight: normal;
     border-bottom: 1px solid #eee;
+    font-weight: bold;
 }
 
 .table tbody td {
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
     vertical-align: middle;
 }
 
 .car-plate {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .car-owner {
@@ -112,12 +121,8 @@ body {
     margin-top: 2px;
 }
 
-
-/* ===========================
-   STATUS BADGES
-   =========================== */
 .status {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .status::before {
@@ -130,13 +135,13 @@ body {
 }
 
 .status.completed::before {
-    background-color: #22c55e;
+    background-color: #00ff4c;
 }
 
 .status.in-progress::before {
-    background-color: #f97316;
+    background-color: #ff6a00;
 }
 
 .status.pending::before {
-    background-color: #eab308;
+    background-color: #ffd500;
 }
