@@ -261,7 +261,7 @@ body {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /* background: linear-gradient(135deg, #0a1628 0%, #071d81 50%, #0a1628 100%); */
@@ -472,7 +472,7 @@ body {
 }
 
 .cta-visual {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/3.jpg');
     background-size: cover;
     border-radius: 10px;
     padding: 40px 30px;
