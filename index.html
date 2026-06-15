@@ -3,175 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OAS Bay - Auto Service Management</title>
+    <title>Oyera Auto Service Bay</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-    <!-- Right Side -->
-    <div class="sidebar">
-        <div class="logo">OYERA</div>
-
-        <div class="nav-links">
-            <a href="#" class="nav-link">Dashboard</a>
-            <a href="#" class="nav-link active">Service Records</a>
-            <a href="#" class="nav-link">Parts &amp; Pricing</a>
-            <a href="#" class="nav-link">Invoices</a>
+    <nav class="landing-nav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="landing-logo">OYERA</a>
+            <div class="d-flex align-items-center gap-4">
+                <a href="index.html" class="landing-nav-link active">Home</a>
+                <a href="#services" class="landing-nav-link">Services</a>
+                <a href="#about" class="landing-nav-link">About</a>
+                <a href="#stats" class="landing-nav-link">Contact</a>
+                <a href="dashboard.html" class="btn btn-sm px-3">Dashboard</a>
+            </div>
         </div>
+    </nav>
 
-        <a href="#" class="logout-link">Logout</a>
-    </div>
-
-    <!-- Main Section -->
-    <div class="main">
-
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <input type="text" class="form-control" style="max-width: 280px;" placeholder="Search by number plate">
-            <div class="avatar">P</div>
-        </div>
-
-   
-        <div class="card border-0 rounded-3 p-4">
-
-        
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="fw-bold mb-0">Service Records</h5>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-sm">Download</button>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">BEST AUTO SERVICES</span>
+                <h1 class="hero-title">Innovative Solutions<br>For Automobile</h1>
+                <p class="hero-text">Professional car maintenance and repair services you can trust by skilled Ugandans. We are here for you and your car</p>
+                <div class="d-flex gap-3">
+                    <a href="customer-registration.html" class="btn px-4 py-2">Book Appointment</a>
                 </div>
             </div>
-
-          
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Number Plate</th>
-                            <th>Car Type</th>
-                            <th>Service Done</th>
-                            <th>Technician</th>
-                            <th>Total (UGX)</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UAX 234B</div>
-                                <div class="car-owner">James Okello</div>
-                            </td>
-                            <td>Small</td>
-                            <td>Engine Oil Change, Oil Filter</td>
-                            <td>David Mukasa</td>
-                            <td>114,000</td>
-                            <td><span class="status completed">Completed</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UBB 901C</div>
-                                <div class="car-owner">Susan Nakato</div>
-                            </td>
-                            <td>Commercial</td>
-                            <td>Brake Fluid, Brake Pads</td>
-                            <td>Peter Ouma</td>
-                            <td>46,000</td>
-                            <td><span class="status completed">Completed</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UAG 112D</div>
-                                <div class="car-owner">Raymond Ssempala</div>
-                            </td>
-                            <td>Heavy</td>
-                            <td>Gearbox Oil, Greasing</td>
-                            <td>David Mukasa</td>
-                            <td>219,000</td>
-                            <td><span class="status in-progress">In Progress</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UBC 445E</div>
-                                <div class="car-owner">Grace Auma</div>
-                            </td>
-                            <td>Small</td>
-                            <td>Wheel Alignment &amp; Balance</td>
-                            <td>Peter Ouma</td>
-                            <td>50,000</td>
-                            <td><span class="status completed">Completed</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UAH 678F</div>
-                                <div class="car-owner">Joseph Kato</div>
-                            </td>
-                            <td>Commercial</td>
-                            <td>Engine Oil Change, Greasing</td>
-                            <td>David Mukasa</td>
-                            <td>119,000</td>
-                            <td><span class="status pending">Pending</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UBD 322G</div>
-                                <div class="car-owner">Agnes Nalubega</div>
-                            </td>
-                            <td>Small</td>
-                            <td>Brake Fluid, Oil Filter</td>
-                            <td>Peter Ouma</td>
-                            <td>48,000</td>
-                            <td><span class="status completed">Completed</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UAM 556H</div>
-                                <div class="car-owner">Moses Wabwire</div>
-                            </td>
-                            <td>Heavy</td>
-                            <td>Engine Oil Change, Brake Pads, Greasing</td>
-                            <td>David Mukasa</td>
-                            <td>240,000</td>
-                            <td><span class="status in-progress">In Progress</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UBF 789J</div>
-                                <div class="car-owner">Sarah Kemigisha</div>
-                            </td>
-                            <td>Small</td>
-                            <td>Wheel Alignment &amp; Balance, Oil Filter</td>
-                            <td>Peter Ouma</td>
-                            <td>70,000</td>
-                            <td><span class="status completed">Completed</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UAP 901K</div>
-                                <div class="car-owner">Patrick Odongo</div>
-                            </td>
-                            <td>Commercial</td>
-                            <td>Gearbox Oil</td>
-                            <td>David Mukasa</td>
-                            <td>120,000</td>
-                            <td><span class="status pending">Pending</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="car-plate">UBG 234L</div>
-                                <div class="car-owner">Diana Akello</div>
-                            </td>
-                            <td>Small</td>
-                            <td>Engine Oil Change</td>
-                            <td>Peter Ouma</td>
-                            <td>99,000</td>
-                            <td><span class="status completed">Completed</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
         </div>
-    </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div>
+                    <h4 class="fw-bold">Auto Repairs</h4>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4 col-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-droplet-fill"></i></div>
+                        <h6>Engine Oil Change</h6>
+                        <p>Full synthetic and conventional oil service for all vehicle types.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-disc-fill"></i></div>
+                        <h6>Brake Service</h6>
+                        <p>Brake fluid, pads and disc replacement for safe stopping.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-gear-fill"></i></div>
+                        <h6>Transmission</h6>
+                        <p>Gearbox oil changes and full transmission diagnostics.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-disc-fill"></i></div>
+                        <h6>Steering &amp; Alignment</h6>
+                        <p>Wheel alignment, balancing and power steering repair.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-wrench-adjustable"></i></div>
+                        <h6>General Maintenance</h6>
+                        <p>Greasing, inspection and preventive maintenance packages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span class="hero-tag">WHY CHOOSE US</span>
+                    <h2 class="fw-bold mt-2 mb-3 about-p">We Offer the Best<br>Services For Your Car</h2>
+                    <p class="about-p mb-4">Cars are becoming ever more complex and challenging to repair. Our service is the best in overcoming these challenges by pairing technology and innovation and skilled mechanics.</p>
+                    <div class="about-feature">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>OUR MECHANICS ARE TRAINED</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>REMOTE CUSTOMER REGISTRATION/BOOKING</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>AN ORGANIZED RECORD KEEPING SYSTEM</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-visual">
+                        <div class="about-visual-box">
+                            <i class="bi bi-tools"></i>
+                            <h5>Expert Technicians</h5>
+                            <p>Certified professionals with years of hands-on experience.</p>
+                        </div>
+                        <div class="about-visual-box">
+                            <i class="bi bi-shield-check"></i>
+                            <h5>Quality Guarantee</h5>
+                            <p>Every service backed by our satisfaction guarantee.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">674</div>
+                        <div class="stat-label">HAPPY CLIENTS</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">987</div>
+                        <div class="stat-label">CARS REPAIRED</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">YEARS OF EXPERIENCE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <span class="hero-tag">GET A QUOTE NOW</span>
+                    <h2 class="fw-bold text-white mt-2 mb-3">Quality Work Is Our<br>First Priority</h2>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <div class="cta-check"><i class="bi bi-check-circle-fill"></i> Get A Quote</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="cta-check"><i class="bi bi-check-circle-fill"></i> Book Appointment</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="cta-check"><i class="bi bi-check-circle-fill"></i> Get Your Car Fixed</div>
+                        </div>
+                    </div>
+                    <a href="customer-registration.html" class="btn-cta">Get A Quote</a>
+                </div>
+                <div class="col-md-5 text-center mt-4 mt-md-0">
+                    <div class="cta-visual">
+                        <i class="bi bi-car-front-fill"></i>
+                        <p>Give us a call to speak directly to a mechanic.</p>
+                        <a href="#" class="btn px-4 py-2">Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="landing-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="landing-logo mb-3">OYERA</div>
+                    <p class="text-muted">OAS Bay Auto Service Management. </br> Here for you and your car!</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="dashboard.html" class="footer-link">Dashboard</a>
+                    <a href="customers.html" class="footer-link">Customers</a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Registration</h6>
+                    <a href="customer-registration.html" class="footer-link">Register Customer</a>
+                    <a href="technician-registration.html" class="footer-link">Register Technician</a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-muted mb-1"><i class="bi bi-telephone-fill"></i> +256 770 123 456</p>
+                    <p class="text-muted mb-1"><i class="bi bi-envelope-fill"></i> info@oyerabay.com</p>
+                    <p class="text-muted mb-1"><i class="bi bi-geo-alt-fill"></i> Kampala, Uganda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Precious Abangira. All rights reserved.
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
